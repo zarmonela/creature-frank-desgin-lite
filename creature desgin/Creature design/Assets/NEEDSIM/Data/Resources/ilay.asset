@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1673346924, guid: a9618c84fa404b94c92d6ecdc698f1a5, type: 3}
+  m_Name: ilay
+  m_EditorClassIdentifier: 
+  DatabaseName: ilay
+  isDefault: 0
+  Settings:
+    useSpeciesSpecificChangeRates: 0
+  NeedsList:
+  - needName: Hunger
+    minValue: 0
+    maxValue: 100
+    changePerSecond: -0.1
+    criticalState: 20
+    satisfiedState: 50
+  Species:
+  - speciesName: Frank
+    needs:
+    - Hunger
+    overrideChangeRates:
+      keys: []
+      values: []
+  - speciesName: Baby
+    needs: []
+    overrideChangeRates:
+      keys: []
+      values: []
+  Interactions:
+  - interactionName: Eat
+    satisfactions:
+    - stringValue: Hunger
+      floatValue: 1
+    duration: 3
+    doesHavePreconditions: 1
+    SpeciesAllowed:
+    - Frank
+    AtSatisfactionLevels:
+    - Any

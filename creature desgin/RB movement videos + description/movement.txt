@@ -1,0 +1,7 @@
+numberd - apperance order in video
+1. free rotation all axes - random speed - for x time 
+2. free movement all axes - random speed - for x time 
+3. up & down - random speed - for x time 
+4. go to floor level (picking)
+5. looking around - (small movement angle for 1 axis at a time)
+
