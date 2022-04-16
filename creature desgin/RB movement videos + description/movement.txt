@@ -5,3 +5,6 @@ numberd - apperance order in video
 4. go to floor level (picking)
 5. looking around - (small movement angle for 1 axis at a time)
 
+Second video -
+moving tagged objects towards a specific x,y,z location 
+
